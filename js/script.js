@@ -36,6 +36,36 @@ button.addEventListener('click', function () {
 
 
 
+
+
+var h3 = document.querySelector('h3');
+var count = 5;
+
+function ToggleDarkMode () {
+
+}
+
+// On pade load initialize vent listerners and run
+// any functions that need to process when the page first loads
+
+
+
+var time = setInterval(function () {
+    count--;
+    h3.innerText = 'Count: ' + count;
+    
+    // check count and if equal to zero, clear interval
+if (count === 0) {
+    clearInterval(time);
+    alert('Times up')
+}
+ }, 1000)
+
+
+
+
+
+
 // // this a call back
 // function newStuff(num, string, callback) {
 //     callback('make me a console out');
